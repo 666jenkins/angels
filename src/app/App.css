@@ -1,7 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+header {
+    background: none;
+    width: 100%;
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+header nav span {
+    cursor: default;
 }
 
 .contactPage {
@@ -90,7 +118,7 @@ a{
         overflow: scroll;
 
     }
-
+}
 
 @media only screen and (min-width: 960px){
 
@@ -119,11 +147,4 @@ a{
         margin-bottom: 10%;
         
     }
-
-
-
-
-}
-
-
 }

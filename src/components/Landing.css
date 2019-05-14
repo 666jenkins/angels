@@ -1,0 +1,122 @@
+.landing {
+    background: url(../images/k5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.brand {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.brand .title {
+    text-align: center;
+    line-height: 40px;
+    word-spacing: 10px;
+    font-size: 3rem;
+    margin: 20px auto;
+}
+
+.brand .links {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand .links button {
+    background: none;
+    border: 3px solid white;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all .5s ease;
+}
+
+.brand .links button:hover {
+    background: #fff;
+    color: #000;
+}
+
+@media only screen and (min-width: 960px){
+
+
+    .overlay {
+        z-index: 1;
+    }
+
+    .overlay * {
+        z-index: 1;
+    }
+
+    .slider {
+        /* display: none; */
+        position: absolute;
+        z-index: 0;
+        background: #000;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .slider * {
+        z-index: 0;
+    }
+    
+    .slider > * {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: slide 16s infinite;
+        overflow: hidden;
+    }
+    
+    .slider div:nth-child(1) {
+        animation-delay: -1s;
+        background-image: url(../images/k1.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: .5;
+    }
+    .slider div:nth-child(2) {
+        animation-delay: 3s;
+        background-image: url(../images/k2.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: .5;
+    }
+    .slider div:nth-child(3) {
+        left: 0%;
+        animation-delay: 7s;
+        background-image: url(../images/k4.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: .5;
+    }
+    .slider div:nth-child(4) {
+        left: 0%;
+        animation-delay: 11s;
+        background-image: url(../images/k6.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: .5;
+    }
+    @keyframes slide {
+        0% { left: 100%; width: 100%; }
+        5% { left: 0%; }
+        25% { left: 0%; }
+        30% { left: -100%; width: 100%; }
+        30.0001% { left: -100%; width: 0%; }
+        100% { left: 100%; width: 0%; }
+    }
+}
