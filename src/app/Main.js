@@ -1,9 +1,11 @@
 import React from 'react'
-import { Switch } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
+import Contact from '../components/Contact';
 
 const Main = () => {
     return (
         <Switch>
+            <Route path='/contact' component={Contact} />
         </Switch>
     )
 }
