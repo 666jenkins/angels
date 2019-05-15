@@ -1,14 +1,17 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Contact from '../components/Contact';
-import LandingPage from '../components/LandingPage';
+import Header from '../components/Header';
 
 const Main = () => {
     return (
-        <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route path='/contact' component={Contact} />
-        </Switch>
+        <>
+            <Header />
+            <Switch>
+                <Route path="/contact" component={Contact} />
+                <Route path="/home" component={Contact} />
+            </Switch>
+        </>
     )
 }
 

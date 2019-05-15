@@ -10,6 +10,7 @@ class LandingPage extends React.Component {
                 <div></div>
                 <div></div>
                 <div></div>
+                <div></div>
             </div>
             <div className="overlay">
                 <div className="brand">

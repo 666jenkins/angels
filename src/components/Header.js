@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <span>TA</span>
+                <span>Taurunum Angels</span>
                 <div className="menu-wrap">
                     <input type="checkbox" className="toggler" id="toggler" />
                     <div className="hamburger"><div></div></div>
