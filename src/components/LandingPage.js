@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 import './Landing.css'
 
 class LandingPage extends React.Component {
+
+    markVisited = () => {
+        sessionStorage.setItem("visited", true);
+    }
+
     render() {
         return <div className="landing">
             <div className="slider">
@@ -16,10 +21,10 @@ class LandingPage extends React.Component {
                 <div className="brand">
                     <h1 className="title">TAURUNUM ANGELS</h1>
                     <div className="links">
-                        <Link to="/home">
+                        <Link to="/" onClick={this.markVisited}>
                             <button>Kennel</button>
                         </Link>
-                        <Link to="/about">
+                        <Link to="/about" onClick={this.markVisited}>
                             <button>Info</button>
                         </Link>
                     </div>

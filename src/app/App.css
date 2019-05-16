@@ -10,6 +10,10 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
+#root:nth-child(1):not(header) {
+    /* padding-top: 80px; */
+}
+
 header {
     background: none;
     width: 100%;
@@ -33,19 +37,20 @@ header nav span {
     cursor: default;
 }
 
+                                        /* contact page */
 .contactPage {
     background-image: url(../images/contactBg.jpg);
-    background-attachment: scroll;
     background-size: cover;
     height: 100vh;
     width: 100%;
 }
 
 .contactContent{
-    background-color: rgba(2, 2, 2, 0.644);
+    background-color: rgba(2, 2, 2, .64);
     color:whitesmoke;
     height: 100vh;
-    overflow: scroll;
+    overflow-x: hidden;
+    padding-top: 80px;
 }
 
 .contactHeading{
@@ -101,8 +106,11 @@ a{
             background-clip: text;
     -webkit-text-fill-color: transparent;
 
+                                     /* Contact Page Eng */
 }
 @media only screen and (min-width: 768px){
+
+                                     /* contact page tablet */
 
     .contactPage{
         background-image: url(../images/contactpagetablet.jpg.jpg);
@@ -116,12 +124,15 @@ a{
     .contactContent{
         background-color: rgba(2, 2, 2, 0.644);
         color:whitesmoke;
-        overflow: scroll;
 
     }
 }
 
+                                    /* contact page tablet end */
+
 @media only screen and (min-width: 960px){
+
+                                    /* contact page pc */
 
     .contactPage{
         text-align: center;
@@ -139,7 +150,6 @@ a{
     .contactContent{
         background-color: rgba(2, 2, 2, 0.644);
         color:whitesmoke;
-        overflow: scroll;
         font-size: 40px;
 
     }
@@ -148,4 +158,8 @@ a{
         margin-bottom: 10%;
         
     }
+
+
+                                    /* contact page pc end */
+
 }
