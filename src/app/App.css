@@ -1,22 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+#root:nth-child(1):not(header) {
+    /* padding-top: 80px; */
+}
+
+header {
+    background: none;
+    width: 100%;
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+header nav span {
+    cursor: default;
+}
+
                                         /* contact page */
 .contactPage {
     background-image: url(../images/contactBg.jpg);
-    background-attachment: scroll;
     background-size: cover;
     height: 100vh;
     width: 100%;
 }
 
 .contactContent{
-    background-color: rgba(2, 2, 2, 0.644);
+    background-color: rgba(2, 2, 2, .64);
     color:whitesmoke;
     height: 100vh;
-    overflow: scroll;
+    overflow-x: hidden;
+    padding-top: 80px;
 }
 
 .contactHeading{
@@ -90,9 +124,9 @@ a{
     .contactContent{
         background-color: rgba(2, 2, 2, 0.644);
         color:whitesmoke;
-        overflow: scroll;
 
     }
+}
 
                                     /* contact page tablet end */
 
@@ -116,7 +150,6 @@ a{
     .contactContent{
         background-color: rgba(2, 2, 2, 0.644);
         color:whitesmoke;
-        overflow: scroll;
         font-size: 40px;
 
     }
@@ -128,8 +161,5 @@ a{
 
 
                                     /* contact page pc end */
-
-}
-
 
 }

@@ -1,0 +1,120 @@
+.landing {
+    background: url(../images/k5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.brand {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.brand .title {
+    text-align: center;
+    line-height: 40px;
+    word-spacing: 10px;
+    font-size: 3rem;
+    margin: 20px auto;
+}
+
+.brand .links {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand .links button {
+    background: none;
+    border: 3px solid white;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all .5s ease;
+}
+
+.brand .links button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.brand .links button:focus {
+    outline: none;
+}
+
+@media only screen and (min-width: 960px){
+
+    body {
+        overflow: hidden;
+    }
+
+    .brand .title {
+        font-size: 550%;
+        margin: 40px auto;
+    }
+
+    .slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        height: 100vh;
+        width: 500%;
+        animation: slide 16s linear infinite;
+    }
+    
+    .slider > * {
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+
+    .slider div:nth-child(1) {
+        background: url(../images/k1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .slider div:nth-child(2) {
+        background: url(../images/k2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .slider div:nth-child(3) {
+        background: url(../images/k5.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .slider div:nth-child(4) {
+        background: url(../images/k6.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .slider div:nth-child(5) {
+        background: url(../images/k1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    @keyframes slide {
+        0% { left: 0; }
+        20% { left: 0; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: -400%; }
+    }
+}
