@@ -4,6 +4,21 @@
     overflow: hidden;
 }
 
+#filter {
+    text-align: center;
+}
+
+#filter p{
+    display: inline-block;
+}
+
+#filter input {
+    opacity: .5;
+}
+
+.checkbox-wrap{
+}
+
 .dogCard {
     border: 1px solid black;
     margin: 10px 0px;
@@ -39,9 +54,59 @@ font-size: 15px;
 
 @media only screen and (min-width: 768px) {
 
+.dogs{
+    width : 100vh;
+    margin: 20px auto;
+    columns: 2;
+    column-gap: 30px;
+}
+
+.dogCard {
+    text-align: left;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 5px;
+    overflow: hidden;
+    break-inside: avoid;
+}
+
+.dogCard img{
+    display: block;
+    width: 95%;
+    max-height:450px;
+    margin:5px auto;
+    border-right: hidden;
+    border-left: hidden;
+}
+.dogCardText h2 {
+    margin-bottom: 15px;
+}
+
 }
 
 
 @media only screen and (min-width: 960px){
+
+.dogs{
+    width : 960px;
+    margin: 20px auto;
+    columns:3;
+    column-gap: 30px;
+}
+
+.dogCard {
+    width: 100vw;
+    margin: 0 0 20px;
+    padding: 5px;
+    overflow: hidden;
+    break-inside: avoid;
+    
+}
+
+.dogCard img {
+    display: block;
+    margin: 5px auto;
+    max-width: 100%;
+}
 
 }

@@ -7,7 +7,7 @@ dog.push(new OurDogsObj(
     dog.length,
     'Boban',
     'male',
-    'amstaff',
+    'cavalier',
     'https://via.placeholder.com/500',
     'Boban Opis'
 
