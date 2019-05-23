@@ -1,7 +1,20 @@
 .dogPage h1 {
     text-align: center;
-    color: black;
+    color:white;
     overflow: hidden;
+}
+
+.dogPage{
+    background-color: rgba(2, 2, 2, 0.699);
+    height: 100%;
+}
+
+.dogBg{
+    background-image: url(../../images/contactBg.jpg);
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    
 }
 
 #filter {
@@ -9,6 +22,7 @@
 }
 
 #filter p{
+    color: whitesmoke;
     display: inline-block;
 }
 
@@ -17,9 +31,12 @@
 }
 
 .checkbox-wrap{
+    display: inline-block;
+    padding: 10px;
 }
 
 .dogCard {
+    background-color: rgba(0, 0, 0, 0.918);
     border: 1px solid black;
     margin: 10px 0px;
     max-width:100%;
@@ -30,27 +47,30 @@ box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
 }
 
 .dogCard img {
+    margin: 0;
+    padding: 0;
     width: 100%;
     max-height:450px;
-    margin:5px auto;
-    padding: 10px;
 }
 
 .dogCardText {
-    text-align: center;
+    color: whitesmoke;
+    text-align: left;
     padding: 10px;
     max-width: 100vw;
+}
 
+.dogCardText h6{
+    font-size: 15px;
+margin-bottom: 10px;
+text-align: left;
 }
 
 .dogCard p {
 font-size: 15px;
+word-wrap: break-word;
 }
 
-.dogCardText p  {
-    text-align: justify;
-    word-wrap: break-word;
-}
 
 @media only screen and (min-width: 768px) {
 
@@ -64,22 +84,22 @@ font-size: 15px;
 .dogCard {
     text-align: left;
     width: 100%;
-    margin: 0 0 20px;
-    padding: 5px;
+    /* margin: 0 0 20px; */
+    /* padding: 5px; */
     overflow: hidden;
     break-inside: avoid;
 }
 
 .dogCard img{
     display: block;
-    width: 95%;
+    width: 100%;
     max-height:450px;
-    margin:5px auto;
+    /* margin:5px auto; */
     border-right: hidden;
     border-left: hidden;
 }
 .dogCardText h2 {
-    margin-bottom: 15px;
+    margin-bottom: 3px;
 }
 
 }
@@ -96,16 +116,24 @@ font-size: 15px;
 
 .dogCard {
     width: 100vw;
-    margin: 0 0 20px;
-    padding: 5px;
+    /* margin: 0 0 20px; */
+    /* padding: 5px; */
     overflow: hidden;
     break-inside: avoid;
-    
+    /* border: unset; */
+    -webkit-box-shadow: none;
 }
+/* .dogCard:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.952);
+-moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.842);
+box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.904);
+} */
 
 .dogCard img {
     display: block;
-    margin: 5px auto;
+    /* margin: 5px auto; */
     max-width: 100%;
 }
 

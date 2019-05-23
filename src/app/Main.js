@@ -7,9 +7,9 @@ import OurDogs from '../components/ourDogs/OurDogs';
 const Main = () => {
     return (
         <Switch>
+            <Route path='/our-dogs' component={OurDogs} />
             <Route path='/contact' component={Contact} />
             <Route path='/news' component={News} />
-            <Route path='/ourDogs' component={OurDogs} />
         </Switch>
     )
 }

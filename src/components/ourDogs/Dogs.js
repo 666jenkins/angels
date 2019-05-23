@@ -5,6 +5,16 @@ let dog = [];
 
 dog.push(new OurDogsObj(
     dog.length,
+    'Golub',
+    'male',
+    'cavalier',
+    'https://via.placeholder.com/500',
+    'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+
+))
+
+dog.push(new OurDogsObj(
+    dog.length,
     'Boban',
     'male',
     'cavalier',
