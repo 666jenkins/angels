@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LandingSlideshow from './sliders/LandingSlideshow';
 import './Landing.css'
 
 class LandingPage extends React.Component {
@@ -10,13 +11,7 @@ class LandingPage extends React.Component {
 
     render() {
         return <div className="landing">
-            <div className="slider">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <LandingSlideshow />
             <div className="overlay">
                 <div className="brand">
                     <h1 className="title">TAURUNUM ANGELS</h1>

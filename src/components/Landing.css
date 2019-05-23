@@ -55,7 +55,8 @@
 
 @media only screen and (min-width: 960px){
 
-    body {
+    .landing {
+        position: relative;
         overflow: hidden;
     }
 
@@ -64,7 +65,7 @@
         margin: 40px auto;
     }
 
-    .slider {
+    .slider-landing {
         position: absolute;
         top: 0;
         left: 0;
@@ -74,33 +75,33 @@
         animation: slide 16s linear infinite;
     }
     
-    .slider > * {
+    .slider-landing > * {
         width: 20%;
         height: 100%;
         float: left;
     }
 
-    .slider div:nth-child(1) {
+    .slider-landing div:nth-child(1) {
         background: url(../images/k1.jpg);
         background-size: cover;
         background-position: center;
     }
-    .slider div:nth-child(2) {
+    .slider-landing div:nth-child(2) {
         background: url(../images/k2.jpg);
         background-size: cover;
         background-position: center;
     }
-    .slider div:nth-child(3) {
+    .slider-landing div:nth-child(3) {
         background: url(../images/k5.jpg);
         background-size: cover;
         background-position: center;
     }
-    .slider div:nth-child(4) {
+    .slider-landing div:nth-child(4) {
         background: url(../images/k6.jpg);
         background-size: cover;
         background-position: center;
     }
-    .slider div:nth-child(5) {
+    .slider-landing div:nth-child(5) {
         background: url(../images/k1.jpg);
         background-size: cover;
         background-position: center;

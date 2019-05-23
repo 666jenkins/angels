@@ -10,10 +10,6 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
-#root:nth-child(1):not(header) {
-    /* padding-top: 80px; */
-}
-
 header {
     background: none;
     width: 100%;
@@ -31,10 +27,37 @@ header nav {
     align-content: center;
     justify-content: space-between;
     color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+header .nav-solid {
+    background: rgba(0, 0, 0, .7);
 }
 
 header nav span {
-    cursor: default;
+    font-weight: 900;
+}
+
+.container {
+    width: 96%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 9;
+    background: none;
+    border: none;
+    font-size: 4em;
+    color: #dc143c;
+}
+
+#backToTop:hover {
+    color: #ff2e58;
 }
 
                                         /* contact page */
