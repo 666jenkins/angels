@@ -22,7 +22,7 @@ class News extends React.Component {
         return (
             <div className='newsPageBg'>
                 <h1>News</h1>
-                <div className='newsPage'>
+                <div className='newsPage container'>
                     < AllNews articles={articles} />
                 </div>
             </div>
