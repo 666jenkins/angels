@@ -39,7 +39,7 @@ class OurDogs extends React.Component {
             return "loading..."
         }
         return (
-            <div class="dogBg">
+            <div className="dogBg">
                 <div className='dogPage'>
                     <h1>Our Dogs</h1>
                     <div id='filter'>
