@@ -113,13 +113,13 @@
     height: 100%;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-evenly;
     pointer-events: none;
 }
 
 .menu-wrap .menu > div > div > ul > li {
-    padding: 12px 0;
     list-style: none;
-    font-size: 3rem;
+    font-size: 200%;
     cursor: pointer;
     width: max-content;
     pointer-events: auto;
@@ -144,7 +144,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .menu-wrap .menu > div > div > ul {
+        height: 70vh;
+    }
+
     .menu-wrap .menu > div > div > ul > li {
-        padding: 20px 0;
+        font-size: 3rem;
     }
 }
